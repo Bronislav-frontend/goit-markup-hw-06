@@ -510,32 +510,63 @@ img {
   width: 570px;
 }
 
-.subscription {
+.subscription-field {
+  display: flex;
   margin-top: 20px;
 }
 
-.user-subscription-mail {
-  width: 350px;
+.subscription-mail {
+  width: 358px;
   height: 50px;
+  padding: 15px 0 15px 16px;
+  color: var(--primary-color);
+  background-color: var(--hero-title-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
 }
 
-.subscription-button {
+.subscription-mail::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription-btn {
+  display: flex;
+  margin-left: 12px;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
-  font-weight: bold;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 1.87;
-  border-radius: 4px;
+  letter-spacing: 0.06em;
   border: none;
+  border-radius: 4px;
   color: var(--primary-color);
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-telegram {
+.subscription-btn:hover,
+.subscription-btn:focus {
+  background-color: var(--mdl-btn-clr-hvr);
+}
+
+.telegram-logo {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
   fill: var(--primary-color);
+  background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-btn:hover .telegram-logo,
+.subscription-btn:focus .telegram-logo {
+  background-color: var(--mdl-btn-clr-hvr);
 }
 
 /* modal */
@@ -710,6 +741,11 @@ img {
 .icon-close {
   width: 18px;
   height: 18px;
+}
+
+.close-button:hover .icon-close,
+.close-button:focus .icon-close {
+  fill: var(--accent-color);
 }
 
 /*portfolio styles*/

@@ -358,7 +358,7 @@
                 </div>
                 <div class="social-section">
                 <section class="social-list">
-                    <b class="social-links-title">Присоединяйтесь</b>
+                    <h2 class="social-links-title">Присоединяйтесь</h2>
                     <ul class="social-links-list list">
                         <li class="social-item">
                         <a href="" class="social-link link">
@@ -392,16 +392,17 @@
                 </section>
             </div>
             <form class="subscription-form">
-                <b class="social-links-title">Подпишитесь на рассылку</b> 
-                <div class="subscription">
-                    <input type="email" name="mail" id="mail" placeholder="E-mail" class="user-subscription-mail">
-                    <label for="mail"></label>
-                    <button type="submit" class="subscription-button">Подписаться
-                        <svg class="icon-telegram">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </div>   
+                <h2 class="social-links-title">Подпишитесь на рассылку</h2> 
+                <div class="subscription-field">
+                <label>
+                    <input name="user-subscription-mail" class="subscription-mail" type="email" placeholder="E-mail" required>
+                </label>
+                <button type="submit" class="subscription-btn">Подписаться
+                    <svg class="telegram-logo">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>
+                </div>
             </form>
         </div>
         <div class="backdrop is-hidden" data-modal>
@@ -444,7 +445,7 @@
                         Комментарий
                         <textarea name="user-cooments" class="modal-form-comments" placeholder="Введите текст"></textarea>
                     </label>
-                    <input name="user-policy" type="checkbox" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required></input>
+                    <input name="user-policy" type="checkbox" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required>
                     <label for="checkbox-policy" class="modal-form-checkbox-policy"> Соглашаюсь с рассылкой и принимаю <a href="" class="modal-form-policy-link">Условия договора</a></label>
                     <button type="submit" class="modal-form-btn">Отправить</button>
                 </form>
